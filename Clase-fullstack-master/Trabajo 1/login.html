@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>Valenciapps</title>
+		<link rel="stylesheet" href="css/master.css">
+		<link rel="stylesheet" href="css/estilos.css">
+	</head>
+	<body>
+		<div class="contenedor-form" id="formuUsu">
+			
+			<div class="toggle">
+				<span> Crear Cuenta</span>
+			</div>
+			
+			<div class="formulario">
+				<h2>Iniciar Sesión</h2>
+				<form id="validar-datos">
+					<input type="text" placeholder="Usuario" required v-model="nuevousuario">
+					<input type="password" placeholder="Contraseña" required>
+					<input type="submit" value="Iniciar Sesión" onClick="location.href='Inicio.html'">
+				</form>
+			</div>
+			
+			<div class="formulario">
+				<h2>Crea tu Cuenta</h2>
+				<form id="nuevo-usuario" @submit.prevent="save()">
+					<input type="text" placeholder="Nombre" required>
+					
+					<input type="text" placeholder="Cedula" required>
+					
+					<input type="text" placeholder="Telefono" required>
+					
+					<input type="password" placeholder="Contraseña" required>
+					
+					<input type="submit" value="Registrarse">
+				</form>
+			</div>
+			
+		</div>
+		<script src="js/jquery-3.1.1.min.js"></script>    
+		<script src="js/main.js"></script>
+	</body>
+</html>
